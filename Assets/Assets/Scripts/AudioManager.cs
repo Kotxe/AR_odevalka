@@ -12,7 +12,6 @@ public class AudioManager : MonoBehaviour
     public AudioClip clickSound;    // Клик по кнопкам
     public AudioClip equipSound;    // Звук ткани/надевания
     public AudioClip unequipSound;  // Звук снятия/сброса
-    public AudioClip teleportSound; // Звук телепортации (шагов)
 
     private void Awake()
     {
@@ -44,12 +43,7 @@ public class AudioManager : MonoBehaviour
         PlaySound(unequipSound);
     }
 
-    public void PlayTeleport()
-    {
-        PlaySound(teleportSound);
-    }
-
-    // Вспомогательный метод
+        // Вспомогательный метод
     private void PlaySound(AudioClip clip)
     {
         if (clip != null && audioSource != null)
