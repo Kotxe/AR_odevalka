@@ -24,6 +24,7 @@ public class ARUIManager : MonoBehaviour
         // Подписываемся на событие "Камера нашла или потеряла картинку"
         imageManager.trackedImagesChanged += OnImageChanged;
         mainUIPanel.SetActive(false); // Прячем UI на старте
+        foreach (var menu in subMenus) menu.SetActive(false);
     }
 
     private void OnDisable()
@@ -60,9 +61,16 @@ public class ARUIManager : MonoBehaviour
     {
         for (int i = 0; i < subMenus.Length; i++)
         {
-            // Если индекс совпал и меню было закрыто - открываем. Иначе - закрываем.
-            bool shouldBeOpen = (i == menuIndex) && !subMenus[i].activeSelf;
-            subMenus[i].SetActive(shouldBeOpen);
+            // Если это то меню, на которое нажали - переключаем его (открыть/закрыть)
+            if (i == menuIndex)
+            {
+                subMenus[i].SetActive(!subMenus[i].activeSelf);
+            }
+            else
+            {
+                // Все остальные меню ПРИНУДИТЕЛЬНО закрываем
+                subMenus[i].SetActive(false);
+            }
         }
     }
 

@@ -21,10 +21,14 @@ public class ARTouchController : MonoBehaviour
         if (Input.touchCount == 1)
         {
             Touch touch = Input.GetTouch(0);
+
             if (touch.phase == TouchPhase.Moved)
             {
-                // Крутим вокруг оси Y (зеленая стрелка) в зависимости от движения пальца по оси X
-                transform.Rotate(0, -touch.deltaPosition.x * rotationSpeed, 0);
+                // Вычисляем угол поворота только на основе горизонтального движения пальца (deltaPosition.x)
+                float rotationY = touch.deltaPosition.x * rotationSpeed;
+
+                // Применяем вращение ТОЛЬКО вокруг оси Y в локальном пространстве
+                transform.Rotate(0, -rotationY, 0, Space.Self);
             }
         }
         // МАСШТАБИРОВАНИЕ (Щипок)

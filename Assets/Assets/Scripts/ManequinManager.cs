@@ -59,12 +59,18 @@ public class ManequinManager : MonoBehaviour
     // --- Метод создания модели на манекене ---
     private GameObject SpawnClothing(ClothingItem item)
     {
-        // Создаем копию префаба (RealPrefab)
+        // 1. Создаем одежду и СРАЗУ делаем её дочерней к нашему контейнеру
         GameObject clothingObj = Instantiate(item.realPrefab, clothingParent);
 
-        // Применяем настройки смещения из ScriptableObject (если надо подправить позицию)
+        // 2. Сбрасываем локальные координаты
+        // localPosition = 0 означает "точно там же, где центр родителя" + оффсет
         clothingObj.transform.localPosition = item.positionOffset;
         clothingObj.transform.localEulerAngles = item.rotationOffset;
+
+        // 3. САМОЕ ВАЖНОЕ: Сбрасываем локальный масштаб в 1
+        // Это заставит одежду принять текущий масштаб Pivot_Master. 
+        // Если манекен уменьшен в 10 раз, одежда тоже уменьшится в 10 раз автоматически.
+        clothingObj.transform.localScale = Vector3.one;
 
         return clothingObj;
     }
