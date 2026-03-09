@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed2f915c845eb6499b03f4d232e5454, type: 3}
+  m_Name: B_Blue
+  m_EditorClassIdentifier: 
+  itemName: Blue
+  category: 1
+  realPrefab: {fileID: 8738690498631383578, guid: 51d155034a02ebc4c963031938ddb198,
+    type: 3}
+  previewPrefab: {fileID: 8589650446479451721, guid: baa205827b79547449079b4a19ff2440,
+    type: 3}
+  positionOffset: {x: 0, y: 0, z: 0}
+  rotationOffset: {x: 0, y: 0, z: 0}

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed2f915c845eb6499b03f4d232e5454, type: 3}
+  m_Name: A_Hat
+  m_EditorClassIdentifier: 
+  itemName: Hat
+  category: 3
+  realPrefab: {fileID: 8712695046670904910, guid: 20b89563fb20b70449d047c1df0bf755,
+    type: 3}
+  previewPrefab: {fileID: 5506605589087592894, guid: 6573c95ea9d59444795e2a6f565d7da8,
+    type: 3}
+  positionOffset: {x: 0, y: 0, z: 0}
+  rotationOffset: {x: 0, y: 0, z: 0}

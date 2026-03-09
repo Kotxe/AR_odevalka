@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed2f915c845eb6499b03f4d232e5454, type: 3}
+  m_Name: A_Glasses
+  m_EditorClassIdentifier: 
+  itemName: Glasses
+  category: 3
+  realPrefab: {fileID: 4626254490128682671, guid: 57e6c87749645904885b75d8682e86d1,
+    type: 3}
+  previewPrefab: {fileID: 9057609072552222749, guid: cadd8a89ea4bc1c4eb40c38e9e12d5f0,
+    type: 3}
+  positionOffset: {x: 0, y: 0, z: 0}
+  rotationOffset: {x: 0, y: 0, z: 0}

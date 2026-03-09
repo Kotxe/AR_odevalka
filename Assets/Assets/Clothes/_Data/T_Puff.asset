@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed2f915c845eb6499b03f4d232e5454, type: 3}
+  m_Name: T_Puff
+  m_EditorClassIdentifier: 
+  itemName: Puff
+  category: 0
+  realPrefab: {fileID: 464897241656305333, guid: 35b12228347d0d9409f4dc2e536b02be,
+    type: 3}
+  previewPrefab: {fileID: 1778543024475664807, guid: 8558ef7f8baaf7840864499d1563ff85,
+    type: 3}
+  positionOffset: {x: 0, y: 0, z: 0}
+  rotationOffset: {x: 0, y: 0, z: 0}

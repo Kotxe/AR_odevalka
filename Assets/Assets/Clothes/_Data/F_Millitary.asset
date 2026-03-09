@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed2f915c845eb6499b03f4d232e5454, type: 3}
+  m_Name: F_Millitary
+  m_EditorClassIdentifier: 
+  itemName: Millitary
+  category: 2
+  realPrefab: {fileID: 3664532052603000939, guid: 0c6b0b62fdeffd34a87c3d3b6e40ff53,
+    type: 3}
+  previewPrefab: {fileID: 3194142641883840384, guid: 3b783a41580e4084b88a0bb9c4c12fed,
+    type: 3}
+  positionOffset: {x: 0, y: 0, z: 0}
+  rotationOffset: {x: 0, y: 0, z: 0}
